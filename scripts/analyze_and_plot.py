@@ -5,8 +5,8 @@ import csv
 import os
 import statistics
 
-RAW_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../results/raw_ecs32"))
-FIG_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../results/figures"))
+RAW_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../results/raw_ecs32"))
+FIG_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../figures"))
 os.makedirs(FIG_DIR, exist_ok=True)
 
 INDEXES = ["CASTLE", "BTreeOLC", "DeltaLearned", "ALEX_PART", "ALEX", "LIPP"]
@@ -135,16 +135,16 @@ plt.rcParams.update({
 })
 
 STYLES = {
-    "CASTLE":       {"color": "#111111", "ls": "-",  "marker": "o", "lw": 1.8, "ms": 4.5, "hatch": ""},
-    "BTreeOLC":     {"color": "#383838", "ls": "--", "marker": "s", "lw": 1.3, "ms": 4.0, "hatch": "//"},
-    "DeltaLearned": {"color": "#5E5E5E", "ls": "-.", "marker": "^", "lw": 1.3, "ms": 4.2, "hatch": "\\\\"},
-    "ALEX_PART":    {"color": "#808080", "ls": (0, (5, 1)), "marker": "P", "lw": 1.3, "ms": 4.2, "hatch": "++"},
-    "ALEX":         {"color": "#9E9E9E", "ls": ":",  "marker": "D", "lw": 1.3, "ms": 3.7, "hatch": "xx"},
-    "LIPP":         {"color": "#BCBCBC", "ls": (0, (3, 1, 1, 1)), "marker": "v", "lw": 1.3, "ms": 3.8, "hatch": ".."},
+    "CASTLE":       {"color": "#9E2A2B", "ls": "-",  "marker": "o", "lw": 1.75, "ms": 4.4, "hatch": ""},
+    "BTreeOLC":     {"color": "#2B5C8F", "ls": "--", "marker": "s", "lw": 1.35, "ms": 3.9, "hatch": "//"},
+    "ALEX_PART":    {"color": "#D96B27", "ls": "-.", "marker": "D", "lw": 1.35, "ms": 3.8, "hatch": "++"},
+    "DeltaLearned": {"color": "#4A7C59", "ls": (0, (3, 1.2)), "marker": "^", "lw": 1.35, "ms": 4.1, "hatch": "\\\\"},
+    "ALEX":         {"color": "#7A68A6", "ls": ":",  "marker": "v", "lw": 1.25, "ms": 3.8, "hatch": "xx"},
+    "LIPP":         {"color": "#7F7F7F", "ls": (0, (2, 1.2)), "marker": "P", "lw": 1.20, "ms": 3.9, "hatch": ".."},
 }
 
-# Figure 1: YCSB-A & YCSB-C (evenly spaced categorical thread axis to prevent 1/2 tick crowding)
-fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(6.3, 2.65), dpi=300)
+# Figure 1: YCSB-A & YCSB-C (classic academic LNCS/arXiv:2603.07107 Fig. 3 style)
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(6.35, 2.68), dpi=300)
 x_t = list(range(len(THREADS)))
 for ax, dataset, title in [
     (ax1, ycsb_a, "(a) YCSB-A (50% Read / 50% Write, Zipf 0.99)"),
@@ -157,20 +157,30 @@ for ax, dataset, title in [
         ax.errorbar(
             x_t, ys, yerr=errs, label=LABELS[idx],
             color=st["color"], linestyle=st["ls"], marker=st["marker"],
-            linewidth=st["lw"], markersize=st["ms"], capsize=2.0, elinewidth=0.8
+            markerfacecolor=st["color"] if idx == "CASTLE" else "white",
+            markeredgewidth=1.05,
+            linewidth=st["lw"], markersize=st["ms"], capsize=2.0, elinewidth=0.75
         )
-    ax.set_title(title, pad=5)
-    ax.set_xlabel("Concurrent Worker Tasks")
-    ax.set_ylabel("Throughput (Mops/s)")
+    ax.set_title(title, pad=5, fontweight="normal", color="#1A1A1A")
+    ax.set_xlabel("Concurrent Worker Tasks", color="#1A1A1A")
+    ax.set_ylabel("Throughput (Mops/s)", color="#1A1A1A")
     ax.set_xticks(x_t)
     ax.set_xticklabels([str(t) for t in THREADS])
-    ax.grid(True, linestyle=":", linewidth=0.5, alpha=0.6)
-    ax.spines["top"].set_visible(False)
-    ax.spines["right"].set_visible(False)
+    ax.grid(True, linestyle="-", linewidth=0.55, color="#E2E2E2")
+    ax.set_axisbelow(True)
+    for sp in ax.spines.values():
+        sp.set_visible(True)
+        sp.set_color("#B8B8B8")
+        sp.set_linewidth(0.8)
+    ax.tick_params(direction="in", colors="#333333", length=3.0, width=0.7)
 
 handles, labels = ax1.get_legend_handles_labels()
-fig.legend(handles, labels, loc="upper center", ncol=3, frameon=False, bbox_to_anchor=(0.5, 1.05))
-fig.tight_layout(rect=[0, 0, 1, 0.87])
+fig.legend(
+    handles, labels, loc="upper center", ncol=3, frameon=True,
+    facecolor="#FFFFFF", edgecolor="#CCCCCC", framealpha=0.95,
+    bbox_to_anchor=(0.5, 1.04), handlelength=2.2, columnspacing=1.2
+)
+fig.tight_layout(rect=[0, 0, 1, 0.85])
 fig.savefig(f"{FIG_DIR}/fig1_throughput_scalability.pdf", bbox_inches="tight")
 plt.close(fig)
 
