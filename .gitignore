@@ -1,5 +1,4 @@
 /target/
-/results/
 baselines/third_party/
 .DS_Store
 *.bin

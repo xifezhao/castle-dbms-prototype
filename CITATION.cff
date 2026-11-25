@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software or experimental artifact, please cite it as below."
+title: "CASTLE: Bridging the Engineering Impedance of Learned Indexes via Pure CoW and Deterministic Recovery"
+type: software
+version: "1.0.0-dasfaa2027"
+date-released: "2026-11-25"
+license: Apache-2.0
+repository-code: "https://github.com/xifezhao/castle-dbms-prototype"
+authors:
+  - name: "CASTLE Authors (Anonymized for Double-Blind Review)"
+preferred-citation:
+  type: conference-paper
+  title: "CASTLE: Bridging the Engineering Impedance of Learned Indexes via Pure CoW and Deterministic Recovery"
+  authors:
+    - name: "CASTLE Authors (Anonymized for Double-Blind Review)"
+  collection-title: "Proceedings of the 32nd International Conference on Database Systems for Advanced Applications (DASFAA 2027) — Under Review"
+  year: 2027
