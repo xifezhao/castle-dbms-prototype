@@ -1,0 +1,2 @@
+num_records,logical_wal_bytes,wal_write_ms,phase1_redo_ms,phase2_reconstruct_ms,total_rto_ms,dyn_phase2_ms,dyn_total_rto_ms,btree_wal_bytes,btree_replay_ms,phys_wal_bytes,phys_replay_ms,trials,castle_exact_matches,dynamic_reduce_divergences,pre_crash_sha256
+1000000,24024576,137.89,32.45,2.37,34.82,0.91,33.36,88000000,18.52,225326592,48.37,100,100,100,2a6142c31638096518b147e8aa83361544ceae6a47d8789017295480d3872ea6

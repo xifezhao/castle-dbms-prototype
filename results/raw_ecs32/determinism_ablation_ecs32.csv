@@ -1,0 +1,2 @@
+n_points,rigid_tree_ms,sequential_ms,rayon_dynamic_ms
+10000000,1.966,32.703,2.145

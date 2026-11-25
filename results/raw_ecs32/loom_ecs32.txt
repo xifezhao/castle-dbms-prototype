@@ -1,0 +1,539 @@
+    Updating `tuna-sparse` index
+     Locking 118 packages to highest compatible versions
+      Adding generic-array v0.14.7 (available: v0.14.9)
+      Adding rand v0.8.8 (available: v0.10.4)
+      Adding sha2 v0.10.9 (available: v0.11.1)
+      Adding zipf v0.2.0 (available: v7.0.2)
+ Downloading crates ...
+  Downloaded adler2 v2.0.1 (registry `tuna-sparse`)
+  Downloaded autocfg v1.5.1 (registry `tuna-sparse`)
+  Downloaded cxxbridge-flags v1.0.205 (registry `tuna-sparse`)
+  Downloaded scoped-tls v1.0.1 (registry `tuna-sparse`)
+  Downloaded equivalent v1.0.3 (registry `tuna-sparse`)
+  Downloaded link-cplusplus v1.0.12 (registry `tuna-sparse`)
+  Downloaded block-buffer v0.10.4 (registry `tuna-sparse`)
+  Downloaded matchers v0.2.0 (registry `tuna-sparse`)
+  Downloaded scratch v1.0.9 (registry `tuna-sparse`)
+  Downloaded crypto-common v0.1.7 (registry `tuna-sparse`)
+  Downloaded futures-sink v0.3.34 (registry `tuna-sparse`)
+  Downloaded rand v0.3.23 (registry `tuna-sparse`)
+  Downloaded cfg-if v1.0.5 (registry `tuna-sparse`)
+  Downloaded cpufeatures v0.2.17 (registry `tuna-sparse`)
+  Downloaded zipf v0.2.0 (registry `tuna-sparse`)
+  Downloaded generic-array v0.14.7 (registry `tuna-sparse`)
+  Downloaded termcolor v1.4.1 (registry `tuna-sparse`)
+  Downloaded futures-core v0.3.34 (registry `tuna-sparse`)
+  Downloaded version_check v0.9.5 (registry `tuna-sparse`)
+  Downloaded hex v0.4.3 (registry `tuna-sparse`)
+  Downloaded tokio-macros v2.7.2 (registry `tuna-sparse`)
+  Downloaded lazy_static v1.5.1 (registry `tuna-sparse`)
+  Downloaded byteorder v1.5.0 (registry `tuna-sparse`)
+  Downloaded cmake v0.1.58 (registry `tuna-sparse`)
+  Downloaded thread_local v1.1.10 (registry `tuna-sparse`)
+  Downloaded rand_chacha v0.3.1 (registry `tuna-sparse`)
+  Downloaded shlex v2.0.1 (registry `tuna-sparse`)
+  Downloaded digest v0.10.7 (registry `tuna-sparse`)
+  Downloaded simd-adler32 v0.3.10 (registry `tuna-sparse`)
+  Downloaded tracing-log v0.2.0 (registry `tuna-sparse`)
+  Downloaded rustversion v1.0.23 (registry `tuna-sparse`)
+  Downloaded foldhash v0.2.0 (registry `tuna-sparse`)
+  Downloaded async-trait v0.1.92 (registry `tuna-sparse`)
+  Downloaded ppv-lite86 v0.2.21 (registry `tuna-sparse`)
+  Downloaded rand_core v0.6.4 (registry `tuna-sparse`)
+  Downloaded slab v0.4.12 (registry `tuna-sparse`)
+  Downloaded quote v1.0.47 (registry `tuna-sparse`)
+  Downloaded either v1.19.0 (registry `tuna-sparse`)
+  Downloaded sha2 v0.10.9 (registry `tuna-sparse`)
+  Downloaded find-msvc-tools v0.1.15 (registry `tuna-sparse`)
+  Downloaded crossbeam-deque v0.8.8 (registry `tuna-sparse`)
+  Downloaded nu-ansi-term v0.50.3 (registry `tuna-sparse`)
+  Downloaded once_cell v1.21.4 (registry `tuna-sparse`)
+  Downloaded pin-project-lite v0.2.18 (registry `tuna-sparse`)
+  Downloaded smallvec v1.16.6 (registry `tuna-sparse`)
+  Downloaded getrandom v0.2.17 (registry `tuna-sparse`)
+  Downloaded crossbeam-utils v0.8.23 (registry `tuna-sparse`)
+  Downloaded unicode-ident v1.0.27 (registry `tuna-sparse`)
+  Downloaded generator v0.8.12 (registry `tuna-sparse`)
+  Downloaded crossbeam-epoch v0.9.21 (registry `tuna-sparse`)
+  Downloaded num-traits v0.2.19 (registry `tuna-sparse`)
+  Downloaded codespan-reporting v0.13.1 (registry `tuna-sparse`)
+  Downloaded proc-macro2 v1.0.107 (registry `tuna-sparse`)
+  Downloaded log v0.4.35 (registry `tuna-sparse`)
+  Downloaded serde_core v1.0.229 (registry `tuna-sparse`)
+  Downloaded serde_derive v1.0.229 (registry `tuna-sparse`)
+  Downloaded crc32fast v1.5.5 (registry `tuna-sparse`)
+  Downloaded sharded-slab v0.1.7 (registry `tuna-sparse`)
+  Downloaded tracing-core v0.1.36 (registry `tuna-sparse`)
+  Downloaded miniz_oxide v0.9.1 (registry `tuna-sparse`)
+  Downloaded rayon-core v1.13.0 (registry `tuna-sparse`)
+  Downloaded cxxbridge-macro v1.0.205 (registry `tuna-sparse`)
+  Downloaded base64 v0.22.1 (registry `tuna-sparse`)
+  Downloaded loom v0.7.3 (registry `tuna-sparse`)
+  Downloaded rand v0.4.6 (registry `tuna-sparse`)
+  Downloaded rand v0.8.8 (registry `tuna-sparse`)
+  Downloaded serde v1.0.229 (registry `tuna-sparse`)
+  Downloaded bytes v1.12.2 (registry `tuna-sparse`)
+  Downloaded crossbeam-channel v0.5.17 (registry `tuna-sparse`)
+  Downloaded flate2 v1.1.11 (registry `tuna-sparse`)
+  Downloaded memchr v2.8.3 (registry `tuna-sparse`)
+  Downloaded cxx-build v1.0.205 (registry `tuna-sparse`)
+  Downloaded typenum v1.20.1 (registry `tuna-sparse`)
+  Downloaded indexmap v2.14.2 (registry `tuna-sparse`)
+  Downloaded nom v8.0.0 (registry `tuna-sparse`)
+  Downloaded tokio-util v0.7.20 (registry `tuna-sparse`)
+  Downloaded cc v1.11.3 (registry `tuna-sparse`)
+  Downloaded hashbrown v0.17.2 (registry `tuna-sparse`)
+  Downloaded aho-corasick v1.1.5 (registry `tuna-sparse`)
+  Downloaded rayon v1.12.0 (registry `tuna-sparse`)
+  Downloaded unicode-width v0.2.3 (registry `tuna-sparse`)
+  Downloaded tracing-subscriber v0.3.23 (registry `tuna-sparse`)
+  Downloaded zlib-rs v0.6.8 (registry `tuna-sparse`)
+  Downloaded cxx v1.0.205 (registry `tuna-sparse`)
+  Downloaded syn v3.0.10 (registry `tuna-sparse`)
+  Downloaded hdrhistogram v7.6.0 (registry `tuna-sparse`)
+  Downloaded zerocopy v0.8.64 (registry `tuna-sparse`)
+  Downloaded regex-syntax v0.8.12 (registry `tuna-sparse`)
+  Downloaded tracing v0.1.44 (registry `tuna-sparse`)
+  Downloaded regex-automata v0.4.19 (registry `tuna-sparse`)
+  Downloaded libc v0.2.191 (registry `tuna-sparse`)
+  Downloaded tokio v1.54.1 (registry `tuna-sparse`)
+   Compiling find-msvc-tools v0.1.15
+   Compiling shlex v2.0.1
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.27
+   Compiling libc v0.2.191
+   Compiling cfg-if v1.0.5
+   Compiling crossbeam-utils v0.8.23
+   Compiling version_check v0.9.5
+   Compiling equivalent v1.0.3
+   Compiling rustversion v1.0.23
+   Compiling hashbrown v0.17.2
+   Compiling once_cell v1.21.4
+   Compiling typenum v1.20.1
+   Compiling pin-project-lite v0.2.18
+   Compiling crossbeam-epoch v0.9.21
+   Compiling zerocopy v0.8.64
+   Compiling scratch v1.0.9
+   Compiling autocfg v1.5.1
+   Compiling crc32fast v1.5.5
+   Compiling cxxbridge-flags v1.0.205
+   Compiling unicode-width v0.2.3
+   Compiling termcolor v1.4.1
+   Compiling regex-syntax v0.8.12
+   Compiling crossbeam-deque v0.8.8
+   Compiling log v0.4.35
+   Compiling lazy_static v1.5.1
+   Compiling rayon-core v1.13.0
+   Compiling adler2 v2.0.1
+   Compiling simd-adler32 v0.3.10
+   Compiling nu-ansi-term v0.50.3
+   Compiling smallvec v1.16.6
+   Compiling thread_local v1.1.10
+   Compiling memchr v2.8.3
+   Compiling base64 v0.22.1
+   Compiling either v1.19.0
+   Compiling byteorder v1.5.0
+   Compiling sharded-slab v0.1.7
+   Compiling cc v1.11.3
+   Compiling foldhash v0.2.0
+   Compiling tracing-core v0.1.36
+   Compiling cpufeatures v0.2.17
+   Compiling scoped-tls v1.0.1
+   Compiling miniz_oxide v0.9.1
+   Compiling bytes v1.12.2
+   Compiling slab v0.4.12
+   Compiling futures-core v0.3.34
+   Compiling generic-array v0.14.7
+   Compiling codespan-reporting v0.13.1
+   Compiling futures-sink v0.3.34
+   Compiling hex v0.4.3
+   Compiling num-traits v0.2.19
+   Compiling nom v8.0.0
+   Compiling tracing v0.1.44
+   Compiling tracing-log v0.2.0
+   Compiling flate2 v1.1.11
+   Compiling indexmap v2.14.2
+   Compiling crossbeam-channel v0.5.17
+   Compiling syn v3.0.10
+   Compiling crypto-common v0.1.7
+   Compiling block-buffer v0.10.4
+   Compiling digest v0.10.7
+   Compiling cmake v0.1.58
+   Compiling regex-automata v0.4.19
+   Compiling sha2 v0.10.9
+   Compiling rayon v1.12.0
+   Compiling getrandom v0.2.17
+   Compiling rand v0.4.6
+   Compiling link-cplusplus v1.0.12
+   Compiling cxx v1.0.205
+   Compiling generator v0.8.12
+   Compiling rand_core v0.6.4
+   Compiling rand v0.3.23
+   Compiling zipf v0.2.0
+   Compiling hdrhistogram v7.6.0
+   Compiling matchers v0.2.0
+   Compiling tracing-subscriber v0.3.23
+   Compiling cxx-build v1.0.205
+   Compiling tokio-macros v2.7.2
+   Compiling cxxbridge-macro v1.0.205
+   Compiling async-trait v0.1.92
+   Compiling tokio v1.54.1
+   Compiling ppv-lite86 v0.2.21
+   Compiling rand_chacha v0.3.1
+   Compiling loom v0.7.3
+   Compiling rand v0.8.8
+   Compiling castle_dbms v1.0.0 (/root/work/castle-dbms-prototype)
+   Compiling tokio-util v0.7.20
+warning: unexpected `cfg` condition name: `loom`
+  --> src/concurrency/rcu_epoch.rs:14:11
+   |
+14 | #[cfg(not(loom))]
+   |           ^^^^
+   |
+   = help: expected names are: `docsrs`, `feature`, and `test` and 34 more
+   = help: consider using a Cargo feature instead
+   = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+            [lints.rust]
+            unexpected_cfgs = { level = "warn", check-cfg = ['cfg(loom)'] }
+   = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(loom)");` to the top of the `build.rs`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+   = note: `#[warn(unexpected_cfgs)]` on by default
+
+warning: unexpected `cfg` condition name: `loom`
+  --> src/concurrency/rcu_epoch.rs:16:7
+   |
+16 | #[cfg(loom)]
+   |       ^^^^
+   |
+   = help: consider using a Cargo feature instead
+   = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+            [lints.rust]
+            unexpected_cfgs = { level = "warn", check-cfg = ['cfg(loom)'] }
+   = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(loom)");` to the top of the `build.rs`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `loom`
+  --> src/concurrency/rcu_epoch.rs:51:11
+   |
+51 | #[cfg(not(loom))]
+   |           ^^^^
+   |
+   = help: consider using a Cargo feature instead
+   = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+            [lints.rust]
+            unexpected_cfgs = { level = "warn", check-cfg = ['cfg(loom)'] }
+   = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(loom)");` to the top of the `build.rs`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `loom`
+  --> src/concurrency/rcu_epoch.rs:58:11
+   |
+58 | #[cfg(not(loom))]
+   |           ^^^^
+   |
+   = help: consider using a Cargo feature instead
+   = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+            [lints.rust]
+            unexpected_cfgs = { level = "warn", check-cfg = ['cfg(loom)'] }
+   = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(loom)");` to the top of the `build.rs`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `loom`
+  --> src/concurrency/rcu_epoch.rs:67:11
+   |
+67 | #[cfg(not(loom))]
+   |           ^^^^
+   |
+   = help: consider using a Cargo feature instead
+   = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+            [lints.rust]
+            unexpected_cfgs = { level = "warn", check-cfg = ['cfg(loom)'] }
+   = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(loom)");` to the top of the `build.rs`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unused import: `std::cell::Cell`
+ --> src/concurrency/rcu_epoch.rs:9:5
+  |
+9 | use std::cell::Cell;
+  |     ^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `std::sync::atomic::Ordering`
+  --> src/concurrency/rcu_epoch.rs:11:5
+   |
+11 | use std::sync::atomic::Ordering;
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unexpected `cfg` condition name: `loom`
+  --> src/concurrency/rcu_epoch.rs:88:19
+   |
+88 |         #[cfg(not(loom))]
+   |                   ^^^^
+   |
+   = help: consider using a Cargo feature instead
+   = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+            [lints.rust]
+            unexpected_cfgs = { level = "warn", check-cfg = ['cfg(loom)'] }
+   = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(loom)");` to the top of the `build.rs`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `loom`
+   --> src/concurrency/rcu_epoch.rs:108:19
+    |
+108 |         #[cfg(not(loom))]
+    |                   ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(loom)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(loom)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `loom`
+   --> src/concurrency/rcu_epoch.rs:129:15
+    |
+129 |     #[cfg(not(loom))]
+    |               ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(loom)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(loom)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `loom`
+   --> src/concurrency/rcu_epoch.rs:173:11
+    |
+173 |     #[cfg(loom)]
+    |           ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(loom)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(loom)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `loom`
+   --> src/concurrency/rcu_epoch.rs:183:15
+    |
+183 |     #[cfg(not(loom))]
+    |               ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(loom)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(loom)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `loom`
+  --> src/concurrency/write_intent.rs:44:11
+   |
+44 | #[cfg(not(loom))]
+   |           ^^^^
+   |
+   = help: consider using a Cargo feature instead
+   = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+            [lints.rust]
+            unexpected_cfgs = { level = "warn", check-cfg = ['cfg(loom)'] }
+   = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(loom)");` to the top of the `build.rs`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `loom`
+  --> src/concurrency/write_intent.rs:46:7
+   |
+46 | #[cfg(loom)]
+   |       ^^^^
+   |
+   = help: consider using a Cargo feature instead
+   = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+            [lints.rust]
+            unexpected_cfgs = { level = "warn", check-cfg = ['cfg(loom)'] }
+   = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(loom)");` to the top of the `build.rs`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `loom`
+  --> src/index/double_buffer.rs:15:11
+   |
+15 | #[cfg(not(loom))]
+   |           ^^^^
+   |
+   = help: consider using a Cargo feature instead
+   = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+            [lints.rust]
+            unexpected_cfgs = { level = "warn", check-cfg = ['cfg(loom)'] }
+   = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(loom)");` to the top of the `build.rs`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `loom`
+  --> src/index/double_buffer.rs:17:7
+   |
+17 | #[cfg(loom)]
+   |       ^^^^
+   |
+   = help: consider using a Cargo feature instead
+   = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+            [lints.rust]
+            unexpected_cfgs = { level = "warn", check-cfg = ['cfg(loom)'] }
+   = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(loom)");` to the top of the `build.rs`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `loom`
+  --> src/index/leaf_ctrl.rs:11:11
+   |
+11 | #[cfg(not(loom))]
+   |           ^^^^
+   |
+   = help: consider using a Cargo feature instead
+   = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+            [lints.rust]
+            unexpected_cfgs = { level = "warn", check-cfg = ['cfg(loom)'] }
+   = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(loom)");` to the top of the `build.rs`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `loom`
+  --> src/index/leaf_ctrl.rs:13:7
+   |
+13 | #[cfg(loom)]
+   |       ^^^^
+   |
+   = help: consider using a Cargo feature instead
+   = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+            [lints.rust]
+            unexpected_cfgs = { level = "warn", check-cfg = ['cfg(loom)'] }
+   = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(loom)");` to the top of the `build.rs`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unused import: `crate::index::leaf_snap::LeafSnap`
+  --> src/recovery/deterministic_math.rs:37:5
+   |
+37 | use crate::index::leaf_snap::LeafSnap;
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unexpected `cfg` condition name: `loom`
+  --> src/storage/mod.rs:23:11
+   |
+23 | #[cfg(not(loom))]
+   |           ^^^^
+   |
+   = help: consider using a Cargo feature instead
+   = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+            [lints.rust]
+            unexpected_cfgs = { level = "warn", check-cfg = ['cfg(loom)'] }
+   = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(loom)");` to the top of the `build.rs`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `loom`
+  --> src/storage/mod.rs:26:11
+   |
+26 | #[cfg(not(loom))]
+   |           ^^^^
+   |
+   = help: consider using a Cargo feature instead
+   = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+            [lints.rust]
+            unexpected_cfgs = { level = "warn", check-cfg = ['cfg(loom)'] }
+   = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(loom)");` to the top of the `build.rs`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: constant `UNPINNED` is never used
+  --> src/concurrency/rcu_epoch.rs:19:7
+   |
+19 | const UNPINNED: usize = usize::MAX;
+   |       ^^^^^^^^
+   |
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: fields `retired_epoch`, `ptr`, and `destructor` are never read
+  --> src/concurrency/rcu_epoch.rs:24:5
+   |
+23 | struct GarbageItem {
+   |        ----------- fields in this struct
+24 |     retired_epoch: usize,
+   |     ^^^^^^^^^^^^^
+25 |     ptr: *mut (),
+   |     ^^^
+26 |     destructor: DestructorFn,
+   |     ^^^^^^^^^^
+
+warning: field `epoch` is never read
+  --> src/concurrency/rcu_epoch.rs:33:5
+   |
+32 | struct ThreadEpochSlot {
+   |        --------------- field in this struct
+33 |     epoch: AtomicUsize,
+   |     ^^^^^
+
+warning: associated function `new` is never used
+  --> src/concurrency/rcu_epoch.rs:37:8
+   |
+36 | impl ThreadEpochSlot {
+   | -------------------- associated function in this implementation
+37 |     fn new() -> Self {
+   |        ^^^
+
+warning: fields `current_epoch`, `slots`, and `garbage` are never read
+  --> src/concurrency/rcu_epoch.rs:46:5
+   |
+45 | pub struct GlobalEpochManager {
+   |            ------------------ fields in this struct
+46 |     current_epoch: AtomicUsize,
+   |     ^^^^^^^^^^^^^
+47 |     slots: Mutex<Vec<&'static ThreadEpochSlot>>,
+   |     ^^^^^
+48 |     garbage: Mutex<Vec<GarbageItem>>,
+   |     ^^^^^^^
+
+warning: `castle_dbms` (lib) generated 26 warnings (run `cargo fix --lib -p castle_dbms` to apply 3 suggestions)
+warning: field `theta` is never read
+  --> src/bin/castle_bench.rs:24:5
+   |
+22 | struct FastZipf {
+   |        -------- field in this struct
+23 |     n: usize,
+24 |     theta: f64,
+   |     ^^^^^
+   |
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: `castle_dbms` (bin "castle_bench") generated 1 warning
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 12m 10s
+     Running tests/loom/test_atomic_swap.rs (target/debug/build/castle_dbms/8bb2c8d4051824a8/out/test_atomic_swap-8bb2c8d4051824a8)
+
+running 2 tests
+
+thread 'test_relaxed_fails_visibility' (18767) panicked at /root/.cargo/registry/src/mirrors.tuna.tsinghua.edu.cn-4dc01642fd091eda/loom-0.7.3/src/rt/alloc.rs:91:17:
+Allocation leaked.
+  Index: 0
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test test_relaxed_fails_visibility - should panic ... ok
+test test_atomic_buffer_rotation_safety ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/loom/test_rcu_lifetimes.rs (target/debug/build/castle_dbms/f164df0048df9694/out/test_rcu_lifetimes-f164df0048df9694)
+
+running 3 tests
+test verify_capacity_exhausted_tail_rollback ... ok
+test test_rcu_task_local_safety ... ok
+test verify_buffer_reuse_ebr_grace_period ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.08s
+
+     Running tests/loom/test_toctou_race.rs (target/debug/build/castle_dbms/be5ef7037c97acb0/out/test_toctou_race-be5ef7037c97acb0)
+
+running 2 tests
+
+thread 'test_acq_rel_fails_toctou' (18773) panicked at tests/loom/test_toctou_race.rs:138:13:
+TOCTOU Race Detected: Store Buffer anomaly allowed both threads to bypass locks.
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test test_acq_rel_fails_toctou - should panic ... ok
+test test_seqcst_prevents_toctou ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
