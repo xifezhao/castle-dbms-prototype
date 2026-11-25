@@ -1,0 +1,50 @@
+name: CASTLE Artifact CI
+
+on:
+  push:
+    branches: [ main ]
+    tags: [ 'v*' ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  verify-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install C++ build dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq build-essential cmake pkg-config
+
+      - name: Install Rust stable toolchain
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Fetch third-party C++ baselines (ALEX & LIPP)
+        run: bash scripts/fetch_third_party.sh
+
+      - name: Verify published 32-vCPU experimental artifact checksums
+        run: |
+          cd results
+          sha256sum -c SHA256SUMS.txt
+
+      - name: Run Loom bounded model-checking suite (7 tests, preemption bound 3)
+        env:
+          RUSTFLAGS: "--cfg loom"
+          LOOM_MAX_PREEMPTIONS: "3"
+        run: |
+          cargo test --test test_toctou_race --test test_atomic_swap --test test_rcu_lifetimes -- --nocapture
+
+      - name: Run crash recovery & bit-exact hash simulation tests
+        env:
+          RUSTFLAGS: "-C target-feature=-fma"
+        run: |
+          cargo test --test bit_exact_hash --test crash_simulator -- --nocapture
+
+      - name: Build production benchmark binary (FMA disabled)
+        env:
+          RUSTFLAGS: "-C target-feature=-fma"
+        run: |
+          cargo build --release --bin castle_bench

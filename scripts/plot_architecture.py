@@ -6,7 +6,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib.patches import FancyBboxPatch
 
-FIG_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../figures"))
+FIG_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../results/figures"))
 os.makedirs(FIG_DIR, exist_ok=True)
 
 plt.rcParams.update({

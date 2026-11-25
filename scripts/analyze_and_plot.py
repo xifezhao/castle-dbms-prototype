@@ -5,8 +5,8 @@ import csv
 import os
 import statistics
 
-RAW_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../results/raw_ecs32"))
-FIG_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../figures"))
+RAW_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../results/raw_ecs32"))
+FIG_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../results/figures"))
 os.makedirs(FIG_DIR, exist_ok=True)
 
 INDEXES = ["CASTLE", "BTreeOLC", "DeltaLearned", "ALEX_PART", "ALEX", "LIPP"]
