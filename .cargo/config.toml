@@ -1,0 +1,70 @@
+# Copyright 2026 System Architecture & Database Kernel Team.
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# ==============================================================================
+# CASTLE Artifact Evaluation: Compiler & Microarchitectural Invariants
+#
+# This configuration file enforces the strict hardware contracts defined in 
+# **Section 5.2 (Deterministic Floating-Point Reduction)** of the VLDB 2027 paper.
+# ==============================================================================
+
+[build]
+rustflags = [
+    # --------------------------------------------------------------------------
+    # [The IEEE 754 Determinism & Idempotency Contract]
+    # --------------------------------------------------------------------------
+    # Modern processors (x86_64 AVX2/AVX-512, ARMv8 NEON) natively support 
+    # Fused Multiply-Add (FMA) instructions. FMA computes `(A * B) + C` with 
+    # a single rounding step at the very end. 
+    # 
+    # While FMA is mathematically more precise and computationally faster, it 
+    # is the enemy of ARIES crash recovery idempotency. A model trained during 
+    # live execution might use FMA, but the crash recovery replay logic might 
+    # trigger a different compiler auto-vectorization path (due to loop unrolling 
+    # or batch size differences), resulting in separate MUL and ADD instructions 
+    # with TWO rounding steps.
+    #
+    # This microarchitectural difference alters the least significant bits of 
+    # the floating-point mantissa. In a learned index, this tiny divergence 
+    # cascades through the routing tree, destroying physical block offsets.
+    #
+    # To guarantee 100% bit-exact reconstruction from logical LSN-ordered WAL 
+    # logs, we explicitly strip the compiler's permission to emit FMA instructions 
+    # for the CASTLE codebase.
+    #
+    # [Artifact Reviewer Notice]:
+    # If you comment out this flag, the `tests/recovery_sim/bit_exact_hash.rs` 
+    # test will deterministically FAIL on modern hardware, as the SHA-256 hash 
+    # of the post-crash model's memory layout will diverge from the pre-crash state.
+    # This flag proves our explicit trade-off: sacrificing marginal ALU throughput 
+    # for absolute database ACID correctness.
+    "-C", "target-feature=-fma",
+
+    # --------------------------------------------------------------------------
+    # [Strict Floating-Point Evaluation]
+    # --------------------------------------------------------------------------
+    # Ensure LLVM does not attempt any algebraic simplifications that assume 
+    # floating-point math is associative (e.g., forbidding anything resembling 
+    # gcc's -ffast-math). Rust defaults to strict IEEE 754, but we document 
+    # this intent here for completeness.
+    # (No explicit flag needed for Rust stable, default behavior is strict).
+]
+
+# ------------------------------------------------------------------------------
+# Release Profile Tuning (Matching Section 7.1 Setup)
+# ------------------------------------------------------------------------------
+[profile.release]
+lto = "thin"          # Enable Thin Link-Time Optimization for cross-crate inlining
+codegen-units = 1     # Maximize optimization opportunities at the cost of compile time
+opt-level = 3         # Maximum execution speed
+debug = true          # Retain DWARF symbols for accurate profiling (flamegraphs) if needed by AEC
