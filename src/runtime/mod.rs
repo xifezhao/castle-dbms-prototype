@@ -15,7 +15,7 @@
 //!
 //! This module implements the compute-isolation and task lifecycle management protocols 
 //! described in **Section 6.1 (Collaborative Cancellation in Dedicated Pools)** of the 
-//! VLDB 2027 paper.
+//! DASFAA 2027 paper.
 //!
 //! # Academic Context: The Asynchronous Runtime Trap
 //! As argued in **Section 2.3**, treating learned index retraining as a generic async task 

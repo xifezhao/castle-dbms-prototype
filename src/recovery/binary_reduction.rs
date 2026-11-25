@@ -15,7 +15,7 @@
 //!
 //! This module implements the CPU-bound, embarrassingly parallel reconstruction 
 //! phase defined in **Section 5.2 (Deterministic Floating-Point Reduction)** 
-//! and **Section 5.3 (Crash Recovery Lifecycle)** of the VLDB 2027 paper.
+//! and **Section 5.3 (Crash Recovery Lifecycle)** of the DASFAA 2027 paper.
 //!
 //! # Academic Context & The Work-Stealing Trap
 //! Modern parallel frameworks (like Rust's `rayon` or C++'s `TBB`) employ dynamic 

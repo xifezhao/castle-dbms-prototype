@@ -15,7 +15,7 @@
 //!
 //! This module implements the `DedicatedRebuildPool`, fulfilling the strict resource 
 //! isolation contracts defined in **Section 6.1 (Collaborative Cancellation in 
-//! Dedicated Pools)** of the VLDB 2027 paper.
+//! Dedicated Pools)** of the DASFAA 2027 paper.
 //!
 //! # Academic Context & The Isolation Imperative
 //! As analyzed in **Section 2.3 (The Asynchronous Runtime Trap)**, relying on the default 

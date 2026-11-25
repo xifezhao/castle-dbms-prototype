@@ -15,7 +15,7 @@
 //!
 //! This module implements the zero-copy persistent storage backend and eBPF-driven 
 //! offloading mechanisms described in **Section 3.3 (The Cold Track: Asynchronous IO & eBPF Offload)**
-//! of the VLDB 2027 paper.
+//! of the DASFAA 2027 paper.
 
 #![deny(missing_docs)]
 

@@ -14,7 +14,7 @@
 //! CASTLE Benchmark Suite: YCSB Workload A (Write-Heavy)
 //!
 //! This module implements the rigorous benchmarking harness for **Section 7.2** and 
-//! **Section 7.3** of the VLDB 2027 paper.
+//! **Section 7.3** of the DASFAA 2027 paper.
 //! 
 //! # Workload Characteristics
 //! - **Profile:** 50% Read, 50% Update/Insert.

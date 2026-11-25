@@ -14,7 +14,7 @@
 //! CASTLE Crash Recovery Verification: Bit-Exact Idempotency via SHA-256
 //!
 //! This module implements the rigorous verification methodology described in 
-//! **Section 7.4 (Validating Bit-Exact Idempotency)** of the VLDB 2027 paper.
+//! **Section 7.4 (Validating Bit-Exact Idempotency)** of the DASFAA 2027 paper.
 //!
 //! # Academic Context & The IEEE 754 Associativity Problem
 //! Standard integration tests often verify floating-point recovery using `approx_eq` 

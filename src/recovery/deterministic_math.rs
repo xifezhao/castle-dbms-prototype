@@ -14,7 +14,7 @@
 //! CASTLE Recovery: Stateless IEEE 754 Deterministic Math Core
 //!
 //! This module implements the mathematical building blocks required by **Section 5.2 
-//! (Deterministic Floating-Point Reduction)** of the VLDB 2027 paper.
+//! (Deterministic Floating-Point Reduction)** of the DASFAA 2027 paper.
 //!
 //! # Academic Context & The Compiler Firewall
 //! As established in the paper, floating-point addition is non-associative: 

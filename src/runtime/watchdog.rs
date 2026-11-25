@@ -15,7 +15,7 @@
 //!
 //! This module implements the precise latency enforcement and memory abandonment 
 //! protocols defined in **Section 6.1 (Collaborative Cancellation in Dedicated Pools)** 
-//! and **ADR-002** of the VLDB 2027 paper.
+//! and **ADR-002** of the DASFAA 2027 paper.
 //!
 //! # Academic Context & The `JoinHandle` Fallacy
 //! A widespread anti-pattern in asynchronous DBMS prototypes is relying on 

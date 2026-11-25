@@ -15,7 +15,7 @@
 //!
 //! This module implements the `WriteIntentGuard` and associated barriers, fulfilling the 
 //! strict microarchitectural contracts defined in **Section 4.3 (Memory Ordering Guarantees)** 
-//! of the VLDB 2027 paper.
+//! of the DASFAA 2027 paper.
 //!
 //! # Academic Context & The Store Buffer Anomaly
 //! When coordinating background structural modifications (e.g., buffer rotations) with 

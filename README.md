@@ -7,11 +7,11 @@ Official prototype implementation, bounded model-checking suite (`loom`), C++17 
 
 > **CASTLE: Bridging the Engineering Impedance of Learned Indexes via Pure CoW and Deterministic Recovery**  
 > *Status: Under Double-Blind Review at DASFAA 2027 (Research Track).*  
-> *Release Tag:* `v1.0.0-dasfaa2027` — see [AUTHORS.md](AUTHORS.md) for double-blind stewardship details.
+> *Release Tag:* `v1.0.1-dasfaa2027` — see [AUTHORS.md](AUTHORS.md) for double-blind stewardship details.
 
 ---
 
-## 1. Repository Structure
+## 1. Repository Structure & Paper Figure Mapping
 
 | Path | Description |
 |---|---|
@@ -23,11 +23,21 @@ Official prototype implementation, bounded model-checking suite (`loom`), C++17 
 | `tests/loom/` | 7 bounded model-checking tests (`loom 0.7`, preemption bound 3), including negative controls, `CapacityExhausted` tail rollback, and EBR buffer-reuse grace period. |
 | `tests/recovery_sim/` | WAL serialization/deserialization and bit-exact crash-recovery simulation tests. |
 | `scripts/fetch_third_party.sh` | Fetches official `microsoft/ALEX` and `Jiacheng-WU/lipp` C++ headers into `baselines/third_party/`. |
-| `scripts/analyze_and_plot.py` | Aggregates 5-seed CSVs and regenerates paper Figures 2–4. |
-| `scripts/plot_architecture.py` | Generates the vector architecture diagram (Figure 1). |
+| `scripts/run_all_experiments.sh` | Unified end-to-end benchmark & figure runner (all 6 indexes + `CASTLE_ARC`, 5 seeds, 1–32 threads, writing to `results/raw_ecs32/`). |
+| `scripts/analyze_and_plot.py` | Aggregates 5-seed CSVs in `results/raw_ecs32/` and regenerates paper Figures 2–4. |
+| `scripts/plot_architecture.py` | Generates the vector architecture diagram (paper Figure 1). |
 | `results/raw_ecs32/` | Complete 16-physical-core / 32-vCPU 5-seed raw CSVs, Loom logs, recovery logs, and hardware specs (`lscpu`, `free`, compiler versions). |
-| `results/figures/` | Published vector PDF figures (`fig_architecture.pdf`, `fig1_throughput_scalability.pdf`, `fig2_skew_burst_p99_latency.pdf`, `fig3_tpcc_rangescan.pdf`). |
-| `results/SHA256SUMS.txt` | SHA-256 integrity manifest covering all published raw data and figure files. |
+| `results/figures/` | Published vector PDF figures (see mapping below). |
+| `results/SHA256SUMS.txt` | SHA-256 integrity manifest covering all 513 published raw data and figure files. |
+
+### Paper Figure to File Mapping
+
+| Paper Figure | File in `results/figures/` | Generator Script |
+|---|---|---|
+| **Fig. 1** (CASTLE Architecture) | `fig_architecture.pdf` | `scripts/plot_architecture.py` |
+| **Fig. 2** (500K YCSB-A & YCSB-C Multi-Core Scalability) | `fig1_throughput_scalability.pdf` | `scripts/analyze_and_plot.py` |
+| **Fig. 3** (500K Index-Stressed TPC-C & YCSB-E) | `fig3_tpcc_rangescan.pdf` | `scripts/analyze_and_plot.py` |
+| **Fig. 4** (20s Skew Burst P99 Read Latency) | `fig2_skew_burst_p99_latency.pdf` | `scripts/analyze_and_plot.py` |
 
 ---
 

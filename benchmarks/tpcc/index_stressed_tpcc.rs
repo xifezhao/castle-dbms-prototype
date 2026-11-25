@@ -14,7 +14,7 @@
 //! CASTLE Benchmark Suite: Index-Stressed TPC-C
 //!
 //! This module implements the rigorous benchmarking harness for **Section 7.1 and 7.2** 
-//! of the VLDB 2027 paper.
+//! of the DASFAA 2027 paper.
 //! 
 //! # Methodology Note: Bypassing the Concurrency Funnel
 //! Standard TPC-C implementations are fundamentally unsuited for evaluating raw index 

@@ -15,7 +15,7 @@
 //!
 //! This module implements the `LogicalWalRecord` and its associated I/O mechanics, 
 //! fulfilling the strict persistence contracts defined in **Section 5.1 (LSN-Driven 
-//! Logical Logging)** of the VLDB 2027 paper.
+//! Logical Logging)** of the DASFAA 2027 paper.
 //!
 //! # Academic Context & Zero I/O Write Amplification
 //! As empirically proven in **Section 7.4 (Crash Recovery Determinism & Speed)**, 

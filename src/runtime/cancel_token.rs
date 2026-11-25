@@ -14,7 +14,7 @@
 //! CASTLE Runtime: Collaborative Cancellation Token
 //!
 //! This module implements the cooperative task abort mechanism defined in **Section 6.1 
-//! (Collaborative Cancellation in Dedicated Pools)** and **ADR-002** of the VLDB 2027 paper.
+//! (Collaborative Cancellation in Dedicated Pools)** and **ADR-002** of the DASFAA 2027 paper.
 //!
 //! # Academic Context & The Termination Hazard
 //! In C++ and Rust systems, forcefully terminating a thread (e.g., `pthread_cancel`) while 

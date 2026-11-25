@@ -14,7 +14,7 @@
 //! CASTLE Crash Recovery & WAL Subsystem
 //!
 //! This module implements the durability and deterministic reconstruction protocols 
-//! described in **Section 5 (Deterministic Recovery over WAL)** of the VLDB 2027 paper.
+//! described in **Section 5 (Deterministic Recovery over WAL)** of the DASFAA 2027 paper.
 //!
 //! # Academic Context & The Durability Dichotomy
 //! Integrating machine learning models into DBMS internals presents a fundamental conflict 

@@ -14,7 +14,7 @@
 //! CASTLE Crash Recovery Simulator: SIGKILL & ARIES Lifecycle
 //!
 //! This module implements the crash recovery harness described in **Section 7.4 
-//! (Crash Recovery Determinism & Speed)** of the VLDB 2027 paper.
+//! (Crash Recovery Determinism & Speed)** of the DASFAA 2027 paper.
 //!
 //! # Academic Context
 //! Traditional learned indexes log physical floating-point parameters, leading to 

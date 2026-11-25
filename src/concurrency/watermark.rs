@@ -14,7 +14,7 @@
 //! CASTLE Concurrency: Global Watermark & LRT Circuit Breaker
 //!
 //! This module implements the defense-in-depth mechanisms described in **Section 6.2 
-//! (Dealing with Long-Running Transactions)** of the VLDB 2027 paper.
+//! (Dealing with Long-Running Transactions)** of the DASFAA 2027 paper.
 //!
 //! # Academic Context & The RCU Stagnation Hazard
 //! In any pure Copy-on-Write (CoW) or MVCC architecture, the garbage collection (GC) of 

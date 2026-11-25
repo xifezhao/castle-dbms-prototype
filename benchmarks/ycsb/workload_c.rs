@@ -14,7 +14,7 @@
 //! CASTLE Benchmark Suite: YCSB Workload C (Read-Only)
 //!
 //! This module implements the rigorous benchmarking harness for **Section 7.2** 
-//! (Performance Under Read-Only Loads) of the VLDB 2027 paper.
+//! (Performance Under Read-Only Loads) of the DASFAA 2027 paper.
 //! 
 //! # Workload Characteristics
 //! - **Profile:** 100% Read, 0% Update/Insert.

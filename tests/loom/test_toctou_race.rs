@@ -14,7 +14,7 @@
 //! CASTLE Concurrency Verification: TOCTOU StoreLoad Litmus Test
 //!
 //! This module implements the exhaustive state-space permutation tests described in 
-//! **Section 7.5 (Concurrency Verification)** of the VLDB 2027 paper.
+//! **Section 7.5 (Concurrency Verification)** of the DASFAA 2027 paper.
 //!
 //! # Academic Context
 //! In **Section 4.3 (Memory Ordering Guarantees)**, we argued that coordinating the 
